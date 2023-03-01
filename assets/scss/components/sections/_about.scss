@@ -1,0 +1,10 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.about {
+    padding: 120px 0;
+
+    &__container {
+        @extend %container-sm;
+    }
+}

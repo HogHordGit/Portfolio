@@ -1,0 +1,81 @@
+doctype html
+html(lang="en")
+  head
+    title Portfolio
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="shortcut icon" type="image/jpg" href="assets/img/logo.png")
+    
+    // Styles
+    link(rel="stylesheet", href="node_modules/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet", href="libs/normalize.css/normalize.css")
+    link(rel="stylesheet", href="assets/css/style.css")
+
+    // Fonts
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap")
+    
+  body
+    .wrapper
+      header.header
+        nav.header__menu.menu
+          .menu__container
+            .menu__body
+              .menu__logo.logo
+                .logo__img
+                  img(src="assets/img/logo.png", alt="")
+                .logo__text HogHord
+              ul.menu__list 
+                li.menu__item
+                  a(href="#" class="menu__link") Home
+                li.menu__item 
+                  a(href="#" class="menu__link") About
+                li.menu__item 
+                  a(href="#" class="menu__link") Contact
+              .menu__button
+                a(href="#" class="menu__btn") Let's talk 
+        .header__content.con-head
+          .con-head__container
+            .con-head__body 
+              .con-head__left.head-left
+                .head-left__body
+                  h1.head-left__title.text-uppercase HI, I’M VOLODYMYR. <br> A FRONT-END <img class="head-left__title-img" src="assets/img/title_image.svg"> DEVELOPER <br> BASED IN UKRAINE
+                  .head-left__phrases.text-uppercase DESIGN <img class="head-left__phrase-img" src="assets/img/phrases_image.svg"> DEVELOPMENT <img class="head-left__phrase-img" src="assets/img/phrases_image.svg"> WEBFLOW
+                  .head-left__buttons 
+                    a(href="#" class="head-left__btn btn_main-bg text-white") Got a project?
+                    a(href="#" class="head-left__btn") Let's talk 
+              .con-head__right.head-right
+                .con-head__frame
+                  .head-right__image
+                    img(src="assets/img/my-photo.webp", alt="Man photo")
+        .header__tech-skills.tech-skills
+          .tech-skills__container
+            .tech-skills__image
+              img(src="assets/img/tech_line.svg", alt="Tech skills")
+      |
+      |
+      main.content
+        section.content__about.about 
+          .about__container 
+            .about__body 
+              .about__name-prof 
+                .about__name Volodymyr <img class="head-left__phrase-img" src="assets/img/phrases_image.svg"> Matviienko
+                h2.about__prof Lead product designer and art director.
+              .about__content
+                h2.about__title 
+                .about__desc
+                .about__cells.cells-about
+                  .cells-about__born 
+                    .cells-about__title BORN IN
+                    .cells-about__content Kyiv
+                  .cells-about__experience 
+                    .cells-about__title EXPERIENCE
+                    .cells-about__content 0+ Years
+                  .cells-about__birth
+                    .cells-about__title DATE OF BIRTH
+                    .cells-about__content 27 June 1992
+      footer.footer
+
+
