@@ -2,7 +2,7 @@
 @use "../../mixins" as *;
 
 .header {
-    min-height: 100vh;
+    max-height: 900px;
     background-color: #f5f5f5;
-    padding-bottom: 50px;
+    position: relative;
 }

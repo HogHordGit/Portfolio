@@ -2,11 +2,14 @@
 @use "../../mixins" as *;
 
 .tech-skills {
-    margin-top: 50px;
-
     &__container {
+        max-width: 1440px;
         margin: 0 auto;
         padding: 0 15px;
+    }
+    &__image {
+        position: absolute;
+        bottom: 50px;
     }
 }
 
