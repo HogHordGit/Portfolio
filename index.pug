@@ -36,6 +36,8 @@ html(lang="en")
                   a(href="#" class="menu__link") Contact
               .menu__button
                 a(href="#" class="menu__btn") Let's talk 
+              div(class="menu__icon" id="menu_button")
+                img(src="assets/img/menu-icon.png", class="menu__icon-img")
         .header__content.con-head
           .con-head__container
             .con-head__body 
@@ -47,9 +49,9 @@ html(lang="en")
                     a(href="#" class="head-left__btn btn_main-bg text-white") Got a project?
                     a(href="#" class="head-left__btn") Let's talk 
               .con-head__right.head-right
-                .con-head__frame
                   .head-right__image
-                    img(src="assets/img/my-photo.webp", alt="Man photo")
+                    .head-right__frame._ibg
+                      img(src="assets/img/my-photo.webp", alt="Man photo" class="head-right__img")
         .header__tech-skills.tech-skills
           .tech-skills__container
             .tech-skills__image
@@ -64,8 +66,8 @@ html(lang="en")
                 .about__name Volodymyr <img class="head-left__phrase-img" src="assets/img/phrases_image.svg"> Matviienko
                 h2.about__prof Lead product designer and art director.
               .about__content
-                h2.about__title 
-                .about__desc
+                h2.about__title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                .about__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 .about__cells.cells-about
                   .cells-about__born 
                     .cells-about__title BORN IN
@@ -75,7 +77,9 @@ html(lang="en")
                     .cells-about__content 0+ Years
                   .cells-about__birth
                     .cells-about__title DATE OF BIRTH
-                    .cells-about__content 27 June 1992
+                    .cells-about__content 06 January 2004
       footer.footer
+    script(src="node_modules/jquery/dist/jquery.min.js") 
+    script(src="assets/js/scripts.js")
 
 

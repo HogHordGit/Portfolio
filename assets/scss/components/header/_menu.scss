@@ -18,6 +18,29 @@
             text-decoration: none;
             color: #000;
             border-bottom: 1px solid $main-color;
+
+            @include md {
+                font-size: 18px;
+            }
+        }
+
+        @include md {
+            padding: 10px;
+        }
+    }
+    &__icon {
+        display: none;
+
+        @include md {
+            display: block;
+            position: absolute;
+            top: 25px;
+            right: 20px;
+        }
+
+        & img {
+            height: 40px;
+            width: 40px;
         }
     }
     &__button {
@@ -30,6 +53,10 @@
             text-decoration: none;
             color: #000;
         }
+
+        @include md {
+            display: none;
+        }
     }
     &__body {
         height: 100px;
@@ -41,10 +68,19 @@
         display: flex;
     }
     &__list {
+        z-index: 999;
         width: 33.3%;
         display: flex;
         list-style: none;
         justify-content: center;
+
+        @include md {
+            position: absolute;
+            flex-direction: column;
+            align-items: flex-end;
+            top: 60px;
+            right: 10px;
+        }
     }
 }
 
